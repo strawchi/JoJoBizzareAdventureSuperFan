@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>A Bizzare Site</title>
+  </head>
+  <body>
+    <img src="images/button.png" id="audio" onclick="startMusic()" />
+    <img src="images/Stonemask.png" id="villain" onclick="showVillains()" />
+    <div class="top-row center-content">
+      <img src="gifs/jojo.gif" class="img2" />
+      <div class="content">
+        <div class="txt">JoJo's Bizzare Adventure</div>
+      </div>
+    </div>
+    <div class="bottom-row light-grey">
+      <div class="box dark-grey">
+        <div class="square black center-content">
+          <img
+            src="images/standingJojo.webp"
+            onclick="firstJo()"
+            id="john"
+            class="dark swap chara biz"
+            data-audio="sounds/johnjjba.mp3"
+            data-new="sounds/diobjjba.mp3"
+          />
+        </div>
+        <div class="square black center-content">
+          <img
+            src="images/Subject.png"
+            onclick="secondJo()"
+            id="joseph"
+            class="dark swap chara biz2"
+            data-audio="sounds/josephjjba.mp3"
+            data-new="sounds/karsjjba.mp3"
+          />
+        </div>
+      </div>
+      <div class="box light-grey">
+        <div class="square black center-content">
+          <img
+            src="images/standKujo.webp"
+            onclick="thirdJo()"
+            id="jotaro"
+            class="dark swap chara biz3"
+            data-audio="sounds/jotarojjba.mp3"
+            data-new="sounds/DIOjjba.mp3"
+          />
+        </div>
+        <div class="square black center-content">
+          <img
+            src="images/josuke.png"
+            onclick="fourthJo()"
+            id="josuke"
+            class="dark swap chara biz4"
+            data-audio="sounds/josukejjba.mp3"
+            data-new="sounds/kirajjba.mp3"
+          />
+        </div>
+      </div>
+      <div class="box dark-grey">
+        <div class="square black center-content">
+          <img
+            src="images/stoodGio.webp"
+            onclick="fifthGio()"
+            id="gio"
+            class="dark swap chara biz5"
+            data-audio="sounds/giornojjba.mp3"
+            data-new="sounds/diavolojjba.mp3"
+          />
+        </div>
+        <div class="square black center-content">
+          <img
+            src="images/Jolyne.png"
+            onclick="sixthJo()"
+            id="jolyne"
+            class="dark swap chara biz6"
+            data-audio="sounds/jolynejjba.mp3"
+            data-new="sounds/puccijjba.mp3"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- this is an audio file you can play using JavaScript -->
+
+    <script src="script.js"></script>
+    <script src="jojo.js"></script>
+  </body>
+</html>
