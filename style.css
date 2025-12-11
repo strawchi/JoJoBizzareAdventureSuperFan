@@ -1,0 +1,307 @@
+/* the 100vh and 100vw set the size of the body to fill the viewport (screen) */
+@import url("https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap");
+body {
+  height: 100vh;
+  width: 100vw;
+  display: block;
+  margin: 0;
+  background-color: black;
+  overflow-x: hidden;
+}
+/* build your layout */
+.top-row {
+  position: relative;
+  height: calc(100% / 3);
+  width: 100%;
+}
+.bottom-row {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  filter: drop-shadow(0 0 5px black) drop-shadow(0 0 10px black)
+    drop-shadow(0 0 20px black);
+}
+.square {
+  height: 100%;
+  width: 50%;
+  transition: background-color 0.5s ease;
+}
+.sq {
+  height: 100%;
+  width: 100%;
+}
+.square:has(.biz:hover) {
+  background-color: indigo;
+}
+
+.square:has(.biz2:hover) {
+  background-color: #12bd12;
+}
+.square:has(.biz3:hover) {
+  background-color: #9300b1;
+}
+.square:has(.biz4:hover) {
+  background-color: darkblue;
+}
+.square:has(.biz5:hover) {
+  background-color: hotpink;
+}
+.square:has(.biz6:hover) {
+  background-color: springgreen;
+}
+.dark:hover {
+  filter: brightness(0%);
+}
+.box {
+  height: 100%;
+  width: calc(100% / 3);
+  display: flex;
+}
+.box2 {
+  height: 100%;
+  width: 50%;
+  display: flex;
+}
+/* this will make ALL <img> elements at most 100% of their PARENT! */
+.chara {
+  max-height: 90%;
+  max-width: 90%;
+  cursor: pointer;
+}
+.chara2 {
+  max-height: 90%;
+  max-width: 90%;
+}
+.push:hover {
+  transform: scale(1.05);
+}
+.push:active {
+  transform: scale(0.95);
+  filter: brightness(90%);
+}
+.img2 {
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+  z-index: -1;
+  position: fixed;
+  left: 0;
+}
+.content {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: calc(100% / 3);
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: -1;
+}
+.top-row:hover .content {
+  opacity: 0.75;
+}
+
+#back {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  z-index: 9999;
+  max-height: 10%;
+}
+.txt {
+  font-size: 200%;
+  color: #ffffff;
+  font-family: "Archivo Black", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#audio {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  cursor: pointer;
+  z-index: 9999;
+  max-height: 10%;
+}
+#audio:hover {
+  transform: scale(1.2);
+}
+#audio:active {
+  transform: scale(0.95);
+  filter: brightness(80%);
+}
+#audio2 {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  cursor: pointer;
+  z-index: 9999;
+  max-height: 10%;
+}
+#audio2:hover {
+  transform: scale(1.2);
+}
+#audio2:active {
+  transform: scale(0.95);
+  filter: brightness(80%);
+}
+#villain {
+  position: fixed;
+  bottom: 10px;
+  right: 10px;
+  cursor: pointer;
+  z-index: 9999;
+  max-height: 20%;
+  transition: 0.3s ease;
+}
+#villain:hover {
+  filter: drop-shadow(0 0 5px beige) drop-shadow(0 0 10px beige)
+    drop-shadow(0 0 20px beige);
+  transform: scale(1.2);
+}
+#villain:active {
+  transform: scale(0.95);
+  filter: brightness(80%);
+}
+p {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: aliceblue;
+  font-size: 100%;
+  margin: 10px;
+}
+p4 {
+  font-family: "Courier New", Courier, monospace;
+  text-align: center;
+  color: aliceblue;
+  font-size: 90%;
+  margin: 10px;
+}
+p1 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f0f8ff60;
+  color: #25164e;
+  font-size: 100%;
+  margin: 10px;
+}
+p2 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f0f8ff60;
+  color: #25164e;
+  font-size: 80%;
+  margin: 10px;
+}
+p3 {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: bold;
+  text-align: center;
+  background-color: #f0f8ff7c;
+  color: #000000;
+  font-size: 100%;
+  margin: 10px;
+}
+/* this class goes on the PARENT div of the image! */
+.center-content {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+}
+.translucent {
+  opacity: 0.5;
+}
+.none {
+  display: none;
+}
+/* background images */
+.bg {
+  background-image: url("images/JoestarMansionEOH.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg2 {
+  background-image: url("images/BTbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg3 {
+  background-image: url("images/BIEbg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg4 {
+  background-image: url("images/morioh.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg5 {
+  background-image: url("images/italy.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg6 {
+  background-image: url("images/prison.png");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg7 {
+  background-image: url("images/puchurch.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg8 {
+  background-image: url("images/DIOsMansion.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.bg9 {
+  background-image: url("images/costapt5.avif");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* colors to see divs */
+
+.black {
+  background-color: #000000;
+}
+.dark-grey {
+  background-color: #3a3b3c;
+}
+.light-grey {
+  background-color: #d3d3d3;
+}
+
+@media only screen and (max-width: 800px) {
+  .bottom-row {
+    display: flex;
+  }
+  .box {
+    height: 50%;
+    width: 100%;
+    display: block;
+  }
+  .square {
+    width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .bottom-row {
+    display: block;
+  }
+  .box {
+    height: calc(100% / 3);
+    width: 100%;
+    display: flex;
+  }
+  .sq {
+    height: 50%;
+  }
+}
