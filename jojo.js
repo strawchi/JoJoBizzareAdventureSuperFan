@@ -9,7 +9,7 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("info").classList.remove("none");
 
   function backButton() {
-    window.location.replace = "index.html";
+    window.location.replace("index.html");
     document.title = "A Bizarre Site";
   }
   
