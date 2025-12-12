@@ -8,6 +8,11 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("gif").classList.remove("none");
   document.getElementById("info").classList.remove("none");
 
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
+  
   const voices = [
     "sounds/sunlight.mp3",
     "sounds/metal_silver_overdrive.mp3",
@@ -61,6 +66,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("setting").classList.add("bg");
   document.getElementById("title").classList.remove("none");
   document.getElementById("dio").classList.remove("none");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = [
     "sounds/konodioda.mp3",
     "sounds/bread.mp3",
@@ -113,6 +122,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("title2").classList.remove("none");
   document.getElementById("jo2").classList.remove("none");
   document.getElementById("setting").classList.add("bg2");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = [
     "sounds/you're it!.mp3",
     "sounds/nicee.mp3",
@@ -165,6 +178,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("gif9").classList.remove("none");
   document.getElementById("title2").classList.remove("none");
   document.getElementById("kar").classList.remove("none");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = [
     "sounds/evil_laugh.mp3",
     "sounds/guitar.mp3",
@@ -217,6 +234,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("title3").classList.remove("none");
   document.getElementById("setting").classList.add("bg3");
   document.getElementById("jo3").classList.remove("none");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = ["sounds/jailed.mp3", "sounds/yareyare.mp3", "sounds/ORA.mp3"];
   let Index = 0;
   let currentAudio = null;
@@ -265,6 +286,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("title3").classList.remove("none");
   document.getElementById("gif8").classList.remove("none");
   document.getElementById("DIO").classList.remove("none");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = ["sounds/MUDA.mp3", "sounds/WRYY.mp3", "sounds/ZAWARUDO.mp3"];
   let Index = 0;
   let currentAudio = null;
@@ -313,6 +338,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("title4").classList.remove("none");
   document.getElementById("setting").classList.add("bg4");
   document.getElementById("info4").classList.remove("none");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = ["sounds/DORA.mp3", "sounds/hair.mp3", "sounds/CRAZYD.mp3"];
   let Index = 0;
   let currentAudio = null;
@@ -365,6 +394,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("gif4").classList.remove("none");
   document.getElementById("title4").classList.remove("none");
   document.getElementById("yoshi").classList.remove("none");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = [
     "sounds/kira_yoshi.mp3",
     "sounds/doorknob.mp3",
@@ -417,6 +450,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("jo5").classList.remove("none");
   document.getElementById("setting").classList.add("bg5");
   document.getElementById("title5").classList.remove("none");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = ["sounds/ciao.mp3", "sounds/GE.mp3", "sounds/mudagio.mp3"];
   let currentAudio = null;
   let Index = 0;
@@ -467,6 +504,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("title5").classList.remove("none");
   document.getElementById("gif5").classList.remove("none");
   document.getElementById("doppio").classList.remove("none");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = [
     "sounds/ringtone.mp3",
     "sounds/diavolo_laugh.mp3",
@@ -519,6 +560,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("info6").classList.remove("none");
   document.getElementById("title6").classList.remove("none");
   document.getElementById("setting").classList.add("bg6");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = [
     "sounds/commission.mp3",
     "sounds/SO.mp3",
@@ -571,6 +616,10 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("setting").classList.add("bg7");
   document.getElementById("title6").classList.remove("none");
   document.getElementById("priest").classList.remove("none");
+  function backButton() {
+    window.location.href = "https://4glsk7.csb.app/";
+    document.title = "A Bizarre Site";
+  }
   const voices = [
     "sounds/inheaven.mp3",
     "sounds/duty.mp3",
@@ -618,10 +667,7 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
 } else {
   console.log("neither John nor Jojo was clicked on the other page!");
 }
-function backButton() {
-  window.location.href = "index.html";
-  document.title = "A Bizzare Site";
-}
+
 const sequences = {
   dio: ["images/DioB.WEBP", "images/DIO.PNG"],
   DIO: ["images/DIO.PNG", "images/DioB.WEBP", "images/warudo.png"],
