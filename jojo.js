@@ -67,7 +67,7 @@ if (sessionStorage.getItem("clickedCharacter") == "john") {
   document.getElementById("title").classList.remove("none");
   document.getElementById("dio").classList.remove("none");
   function backButton() {
-    window.location.href = "https://strawchi.github.io/JoJoBizzareAdventureSuperFan/";
+    window.location.replace("index.html");
     document.title = "A Bizarre Site";
   }
   const voices = [
